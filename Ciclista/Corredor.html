@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>T3-Aplicorredores</title>
+ <script src="js/js.js"></script>
+</head>
+<body>
+<label for="name">nombre</label>
+<input type="text" placeholder="Introduce tu nombre" onblur="ValidaNombre()" id="nom">
+<br>
+<label for="mail">Email</label>
+<input type="mail" placeholder="Introduce tu email" onblur="ValidaEmail()" id="email">
+<br>
+<input type="radio" name="comp" value="si" id="rad-si" onclick="Confimacion()">
+<label for="comp">Sí</label> 
+<div id="corredor"></div>
+<input type="radio" name="comp" value="no" id="rad-no" onclick="borrado()">
+<label for="comp">No</label> 
+<br>
+<button type="submit" onclick="Final()">Enviar</button>
+</body>
+</html>
